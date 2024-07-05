@@ -16,8 +16,5 @@ app.use(express.static("public"));
 
 
 
-
-
-
 module.exports=app;
 
