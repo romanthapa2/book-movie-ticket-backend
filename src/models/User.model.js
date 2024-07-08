@@ -1,4 +1,4 @@
-const { Schema, Mongoose, default: mongoose } = require("mongoose");
+const { Schema, mongoose } = require("mongoose");
 const jwtToken = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
@@ -35,5 +35,4 @@ const userSchema = new Schema(
 );
 
 
-const user=mongoose.model('User',userSchema);
-module.exports = user
+module.exports=mongoose.model('User',userSchema);
