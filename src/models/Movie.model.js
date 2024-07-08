@@ -42,7 +42,7 @@ const movieSchema=new Schema({
         required: true,
     },
     ticketPrice: {
-        type: Boolean,
+        type: String,
     },
 })
 
