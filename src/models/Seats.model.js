@@ -5,10 +5,7 @@ const seatSchema = new Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref:"showTime"
   },
-  is_booked :{
-    type : Boolean,
-    default :false,
-  }
+  seats : []
 });
 
 module.exports = mongoose.model("seat", seatSchema);

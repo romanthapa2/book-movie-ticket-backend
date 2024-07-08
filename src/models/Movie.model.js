@@ -12,7 +12,6 @@ const movieSchema=new Schema({
     },
     releaseDate: {
         type: Date,
-        required: true,
     },
     status:{
         type: String,
@@ -31,7 +30,6 @@ const movieSchema=new Schema({
     },
     rating: {
         type: Number,
-        required: true,
         min: 1,
         max: 10,
     },
@@ -45,7 +43,6 @@ const movieSchema=new Schema({
     },
     ticketPrice: {
         type: Boolean,
-        required: true,
     },
 })
 

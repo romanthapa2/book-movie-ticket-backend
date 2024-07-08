@@ -1,6 +1,10 @@
 const { mongoose, Schema } = require("mongoose");
 
 const cinemaHallSchema = new Schema({
+    city:{
+        type : mongoose.Schema.Types.ObjectId,
+        ref : "city"
+    },
     seats:{
         type:mongoose.Schema.Types.ObjectId,
         ref: "seat"

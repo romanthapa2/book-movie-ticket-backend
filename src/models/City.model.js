@@ -1,10 +1,6 @@
 const { mongoose, Schema } = require("mongoose");
 
 const citySchema = new Schema({
-  cinema_halls: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref : 'cinemaHall'
-  },
   name: {
     type: String,
     required: true,
@@ -13,7 +9,6 @@ const citySchema = new Schema({
   },
   address:{
     type:String,
-    required:true
   }
 });
 

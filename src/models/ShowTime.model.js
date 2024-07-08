@@ -10,7 +10,17 @@ const showTimeSchema = new Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "cinemaHall",
     },
-    shifts:[]
+    shifts:[{
+      startTime:{
+        type: Date,
+        required: true
+      },
+      endTime:{
+        type: Date,
+        required: true
+      }
+    }
+    ]
   },
   { timestamps: true }
 );
